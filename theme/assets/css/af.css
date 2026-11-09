@@ -20,8 +20,7 @@
 }
 
 :root {
-  --md-text-font-family: "af", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --md-code-font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --md-text-font: "af";
   --af-radius: 14px;
   --af-radius-sm: 10px;
 }
@@ -156,7 +155,7 @@ body {
 }
 
 .md-tabs__link {
-  font-size: 0.74rem;
+  font-size: 0.7rem;
   opacity: 1;
   color: var(--af-muted);
   transition: color 0.15s ease;
@@ -242,7 +241,7 @@ body {
 /* Sidebar navigation */
 
 .md-nav {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
 }
 
 .md-nav__title {
@@ -288,13 +287,13 @@ body {
 /* Typography */
 
 .md-typeset {
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   line-height: 1.7;
 }
 
 .md-typeset h1 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--af-text);
@@ -303,7 +302,7 @@ body {
 
 .md-typeset h2 {
   font-weight: 700;
-  font-size: 1.28rem;
+  font-size: 1.18rem;
   letter-spacing: -0.01em;
   margin-top: 2.2em;
   padding-top: 1.2em;
@@ -391,7 +390,7 @@ body {
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   box-shadow: none;
 }
 
@@ -427,7 +426,7 @@ body {
   border-radius: var(--af-radius-sm);
   background: var(--af-card);
   box-shadow: none;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
 }
 
 .md-typeset .admonition-title,
@@ -587,7 +586,7 @@ body {
 }
 
 .md-typeset .af-hero p {
-  font-size: 1rem;
+  font-size: 0.92rem;
   color: var(--af-muted);
   max-width: 38rem;
   margin: 0 0 1.2em;
@@ -801,13 +800,13 @@ body {
 .md-content .af-hero::after {
   content: "";
   position: absolute;
-  right: 3rem;
+  right: 2.5rem;
   top: 50%;
-  width: 210px;
-  height: 218px;
+  width: 330px;
+  height: 342px;
   transform: translateY(-50%);
   background: url("../brand/logo.svg") no-repeat center / contain;
-  opacity: 0.1;
+  opacity: 0.13;
   pointer-events: none;
 }
 
@@ -850,7 +849,7 @@ body {
 .md-typeset .af-lead {
   color: var(--af-text);
   opacity: 0.82;
-  font-size: 1.02rem;
+  font-size: 0.94rem;
   line-height: 1.65;
   padding: 0.1em 0 0.2em 1rem;
   border-left: 3px solid var(--af-accent);
@@ -955,5 +954,86 @@ body {
 }
 
 .md-typeset .af-hero h1 {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
+}
+
+.md-typeset .af-hero .headerlink {
+  display: none;
+}
+
+.md-typeset .af-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.md-typeset .af-hero p {
+  max-width: 36rem;
+}
+
+/* Footer brand and repository link */
+
+.af-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem 1.2rem;
+  padding: 0.4rem 0;
+}
+
+.af-footer__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--af-text);
+  font-weight: 600;
+}
+
+.af-footer__brand img {
+  width: 1.6rem;
+  height: auto;
+}
+
+.af-footer__copy {
+  color: var(--af-muted);
+}
+
+.af-footer__repo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem 0.4rem 0.7rem;
+  border: 1px solid var(--af-line);
+  border-radius: 999px;
+  background: var(--af-card);
+  color: var(--af-text) !important;
+  font-weight: 600;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.af-footer__repo:hover {
+  border-color: var(--af-accent);
+  color: var(--af-accent) !important;
+  background: var(--af-accent-soft);
+}
+
+.af-footer__repo svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: currentColor;
+}
+
+.md-footer-meta .af-footer__brand {
+  color: var(--af-text);
+}
+
+.md-footer-meta .af-footer__brand:hover {
+  color: var(--af-accent);
+}
+
+.md-footer-meta .af-footer__brand {
+  color: var(--af-text);
+}
+
+.md-footer-meta .af-footer__brand:hover {
+  color: var(--af-accent);
 }

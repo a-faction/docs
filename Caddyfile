@@ -14,8 +14,11 @@
 		-Server
 	}
 
-	@assets path */assets/*
-	header @assets Cache-Control "public, max-age=604800"
+	@static path */assets/fonts/* */assets/brand/* */assets/images/*
+	header @static Cache-Control "public, max-age=604800"
+
+	@code path *.css *.js
+	header @code Cache-Control "no-cache"
 
 	file_server
 
