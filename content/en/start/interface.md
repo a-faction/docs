@@ -20,6 +20,9 @@ icon: material/compass-outline
 
 Which items you see is decided by the server admins. An item disappeared — it was hidden for your position, see [Permissions](../settings/access.md).
 
+!!! tip "Names may differ on your server"
+    Server admins can rename sections and words: "faction" → "department", "coins" → "points". These docs use the default names. How to set it up — [Presets and terms](../settings/presets.md).
+
 | Item | What's inside | Article |
 |---|---|---|
 | Members | Roster, registration | [Members](../work/members.md) |

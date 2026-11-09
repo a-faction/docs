@@ -17,60 +17,85 @@ hide:
 
 </div>
 
-<p class="af-section-title">Разделы</p>
+## С чего начать { #start }
 
-<div class="grid cards" markdown>
+<div class="af-paths" markdown>
 
--   :material-rocket-launch-outline:{ .lg } **Начало работы**
+<div class="af-path" markdown>
 
-    Подключение сервера, бот, первая настройка, вход.
+<span class="af-path__tag">Владельцу сообщества</span>
 
-    [:octicons-arrow-right-24: Открыть](start/index.md)
+### Подключаю свой сервер
 
--   :material-account-group-outline:{ .lg } **Работа с составом**
+Бесплатно, около пяти минут вместе с настройкой.
 
-    Участники, выговоры, неактив, отчёты, коины, собеседования, формы.
+<div class="af-steps" markdown>
 
-    [:octicons-arrow-right-24: Открыть](work/index.md)
-
--   :fontawesome-brands-discord:{ .lg } **Discord**
-
-    Команды бота, кнопки и меню в каналах, объявления.
-
-    [:octicons-arrow-right-24: Открыть](discord/index.md)
-
--   :material-cog-outline:{ .lg } **Настройки сервера**
-
-    Структура, права, старшинство, уведомления, автоматизации.
-
-    [:octicons-arrow-right-24: Открыть](settings/index.md)
-
--   :material-account-circle-outline:{ .lg } **Мой аккаунт**
-
-    Тема, язык, приватность, Premium.
-
-    [:octicons-arrow-right-24: Открыть](account/index.md)
-
--   :material-lifebuoy:{ .lg } **Помощь**
-
-    Все ошибки и их решения, частые вопросы, поддержка.
-
-    [:octicons-arrow-right-24: Открыть](help/index.md)
+1. [Подключите сервер](start/connect-server.md) на a-faction.xyz и добавьте бота.
+2. [Настройте структуру](start/first-steps.md) — или просто опишите сообщество ИИ.
+3. [Добавьте людей](work/members.md#register) — роли в Discord бот выдаст сам.
 
 </div>
 
-<p class="af-section-title">Чаще всего ищут</p>
+</div>
 
-<div class="grid cards" markdown>
+<div class="af-path" markdown>
 
--   [Почему не пускает в панель](start/login.md#troubleshooting)
--   [Пропал раздел или кнопка](settings/access.md#troubleshooting)
--   [Бот не выдаёт роли](start/connect-bot.md#troubleshooting)
--   [Не пришёл код подтверждения](start/connect-server.md#troubleshooting)
--   [Как снять выговор](work/appeals.md)
--   [Команды бота](discord/commands.md)
+<span class="af-path__tag">Участнику</span>
+
+### Меня добавили на сервер
+
+Регистрацию делает руководство или бот, пароль не нужен.
+
+<div class="af-steps" markdown>
+
+1. [Войдите](start/login.md) на crm.a-faction.xyz через Discord.
+2. Посмотрите, [как устроена панель](start/interface.md), или пройдите встроенную экскурсию.
+3. Подайте первый [отчёт](work/reports.md) или [неактив](work/inactive.md), когда понадобится.
 
 </div>
 
-!!! tip "Названия у вас могут отличаться"
-    Администрация сервера может переименовать разделы и слова под себя: «фракция» → «отдел», «коины» → «баллы». В документации — стандартные названия.
+</div>
+
+</div>
+
+## Если что-то не работает { #fixes }
+
+<div class="af-fixes" markdown>
+
+<div class="af-fix" markdown>
+<span class="af-fix__what">При входе пишет «Доступ запрещен»</span>
+<span class="af-fix__how">Вашего Discord-аккаунта ещё нет в составе. Попросите руководство зарегистрировать вас. [Подробнее](start/login.md#troubleshooting)</span>
+</div>
+
+<div class="af-fix" markdown>
+<span class="af-fix__what">Пропал раздел или нет кнопки</span>
+<span class="af-fix__how">Раздел скрыт для вашей должности или у неё нет права на это действие. [Подробнее](settings/access.md#troubleshooting)</span>
+</div>
+
+<div class="af-fix" markdown>
+<span class="af-fix__what">Бот не выдал роль в Discord</span>
+<span class="af-fix__how">Роль бота стоит ниже выдаваемой — поднимите её в настройках ролей Discord. [Подробнее](start/connect-bot.md#troubleshooting)</span>
+</div>
+
+<div class="af-fix" markdown>
+<span class="af-fix__what">Не приходит код подтверждения</span>
+<span class="af-fix__how">Бот пишет только тем, с кем у него общий сервер. Зайдите в Discord A-Faction и откройте личные сообщения. [Подробнее](start/connect-server.md#troubleshooting)</span>
+</div>
+
+</div>
+
+[Все ошибки и решения :octicons-arrow-right-24:](help/troubleshooting.md){ .af-more }
+
+## Разделы { #sections }
+
+<div class="af-index" markdown>
+
+- [Начало работы](start/index.md) <span>подключение, бот, вход</span>
+- [Работа с составом](work/index.md) <span>участники, выговоры, отчёты, коины</span>
+- [Discord](discord/index.md) <span>команды бота, кнопки, объявления</span>
+- [Настройки сервера](settings/index.md) <span>структура, права, уведомления</span>
+- [Мой аккаунт](account/index.md) <span>тема, язык, приватность</span>
+- [Помощь](help/index.md) <span>частые вопросы, ИИ, поддержка</span>
+
+</div>

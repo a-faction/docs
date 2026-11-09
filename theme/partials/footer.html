@@ -32,39 +32,28 @@
 
   <div class="af-foot">
     <div class="af-foot__inner md-grid">
-      <div class="af-foot__main">
-        <div class="af-foot__brand">
-          <a href="{{ f.home }}" class="af-foot__logo">
-            <img src="{{ 'assets/brand/logo-wordmark.png' | url }}" alt="A-Faction" width="125" height="42" loading="lazy" decoding="async">
-          </a>
-          <span class="af-foot__tagline">{{ f.tagline }}</span>
-        </div>
-
-        <nav class="af-foot__columns" aria-label="{{ lang.t('footer') }}">
+      <div class="af-foot__row">
+        <a href="{{ f.home }}" class="af-foot__logo">
+          <img src="{{ 'assets/brand/logo-wordmark.png' | url }}" alt="A-Faction" width="125" height="42" loading="lazy" decoding="async">
+        </a>
+        <nav class="af-foot__links" aria-label="{{ lang.t('footer') }}">
           {% for column in f.columns %}
-            <div class="af-foot__column">
-              <span class="af-foot__title">{{ column.title }}</span>
-              {% for link in column.links %}
-                {% if link.url %}
-                  <a href="{{ link.url | url }}" class="af-foot__link">{{ link.title }}</a>
-                {% else %}
-                  <a href="{{ link.href }}" class="af-foot__link" target="_blank" rel="noopener">{{ link.title }}</a>
-                {% endif %}
-              {% endfor %}
-            </div>
+            {% for link in column.links %}
+              {% if link.url %}
+                <a href="{{ link.url | url }}" class="af-foot__link">{{ link.title }}</a>
+              {% else %}
+                <a href="{{ link.href }}" class="af-foot__link" target="_blank" rel="noopener">{{ link.title }}</a>
+              {% endif %}
+            {% endfor %}
           {% endfor %}
         </nav>
       </div>
-
       <div class="af-foot__bottom">
-        <span class="af-foot__copyright">© 2024 – {{ build_date_utc.strftime('%Y') }} A-Faction</span>
-        <div class="af-foot__meta">
-          <span class="af-foot__madeby">{{ f.made_by }} <a href="https://discord.com/users/325196577624817674" target="_blank" rel="noopener">jalisco</a></span>
-          <button type="button" class="af-foot__top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-            <span>{{ f.to_top }}</span>
-            {% include ".icons/material/arrow-up.svg" %}
-          </button>
-        </div>
+        <span>© 2024 – {{ build_date_utc.strftime('%Y') }} A-Faction · {{ f.made_by }} <a href="https://discord.com/users/325196577624817674" target="_blank" rel="noopener">jalisco</a></span>
+        <button type="button" class="af-foot__top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+          <span>{{ f.to_top }}</span>
+          {% include ".icons/material/arrow-up.svg" %}
+        </button>
       </div>
     </div>
 

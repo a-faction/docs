@@ -10,6 +10,9 @@ icon: material/shield-key-outline
     - **Where:** Site settings → Permissions.
     - **Three levels:** full access → section visibility → action permissions.
 
+!!! tip "Names may differ on your server"
+    Server admins can rename sections and words: "faction" → "department", "coins" → "points". These docs use the default names. How to set it up — [Presets and terms](presets.md).
+
 ## 1. Full access
 
 The server owner and the platform admins see and can do everything.
