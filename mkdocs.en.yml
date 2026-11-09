@@ -1,0 +1,29 @@
+INHERIT: config/base.yml
+site_name: A-Faction Docs
+site_description: How to use A-Faction: the control panel and Discord bot for communities.
+docs_dir: content/en
+site_dir: site/en
+
+theme:
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Dark theme
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Light theme
+
+plugins:
+  - search:
+      lang: en
+
+nav: !ENV [AF_NAV_PLACEHOLDER, []]

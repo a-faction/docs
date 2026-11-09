@@ -1,0 +1,82 @@
+site_url: https://docs.a-faction.xyz/
+site_author: A-Faction
+copyright: © A-Faction
+
+theme:
+  name: material
+  custom_dir: ../theme
+  logo: assets/brand/logo.svg
+  favicon: assets/brand/favicon.ico
+  font: false
+  icon:
+    admonition:
+      abstract: material/map-marker-radius-outline
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.tabs.link
+
+extra_css:
+  - assets/css/af.css
+extra_javascript:
+  - assets/js/af.js
+
+extra:
+  generator: false
+  alternate:
+    - name: Русский
+      link: /
+      lang: ru
+    - name: Українська
+      link: /uk/
+      lang: uk
+    - name: English
+      link: /en/
+      lang: en
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://a-faction.xyz
+      name: a-faction.xyz
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/2cMBp8gjYn
+      name: Discord
+    - icon: fontawesome/solid/signal
+      link: https://status.a-faction.xyz
+      name: status.a-faction.xyz
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+validation:
+  omitted_files: warn
+  absolute_links: info
+  unrecognized_links: warn
+  anchors: warn

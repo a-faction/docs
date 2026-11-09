@@ -1,0 +1,29 @@
+INHERIT: config/base.yml
+site_name: Документация A-Faction
+site_description: Как пользоваться A-Faction: панель управления и Discord-бот для сообществ.
+docs_dir: content/ru
+site_dir: site
+
+theme:
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+plugins:
+  - search:
+      lang: [ru, en]
+
+nav: !ENV [AF_NAV_PLACEHOLDER, []]
