@@ -1,6 +1,10 @@
+---
+icon: material/monitor-arrow-down
+---
+
 # Приложение для компьютера
 
-<p class="af-lead">Отдельное приложение для Windows и macOS. Те же разделы, что в браузере.</p>
+<p class="af-lead" markdown>Любите, когда всё под рукой? Поставьте A-Faction как обычную программу — свой ярлык, своё окно, обновления приходят сами.</p>
 
 !!! abstract "Коротко"
     - **Скачать:** [a-faction.xyz/desktop](https://a-faction.xyz/desktop) — сайт сам предложит нужную версию.

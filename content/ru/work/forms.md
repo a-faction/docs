@@ -1,6 +1,10 @@
+---
+icon: material/form-select
+---
+
 # Формы и анкеты
 
-<p class="af-lead">Свои анкеты, опросы и тесты по ссылке — как Google Forms, но внутри A-Faction.</p>
+<p class="af-lead" markdown>Свои Google Forms прямо в A-Faction: заявки в состав, опросы, тесты на знание правил — с таймером и защитой от списывания.</p>
 
 !!! abstract "Коротко"
     - **Где:** боковое меню → «Формы».

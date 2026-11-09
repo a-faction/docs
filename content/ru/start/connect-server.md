@@ -1,6 +1,10 @@
+---
+icon: material/server-plus-outline
+---
+
 # Подключить сервер
 
-<p class="af-lead">Подключение Discord-сервера к A-Faction. Бесплатно, около двух минут.</p>
+<p class="af-lead" markdown>Четыре шага и две минуты — и ваш Discord-сервер подключён к A-Faction. Платить ничего не нужно, карта не понадобится.</p>
 
 !!! abstract "Коротко"
     - **Где:** [a-faction.xyz](https://a-faction.xyz) → «Подключить сервер». В панели такой кнопки нет.

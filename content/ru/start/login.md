@@ -1,6 +1,10 @@
+---
+icon: material/login
+---
+
 # Вход и устройства
 
-<p class="af-lead">Вход — только через Discord. Пароля нет.</p>
+<p class="af-lead" markdown>Никаких паролей: в A-Faction вы входите своим Discord-аккаунтом. Один раз вошли — и панель запомнит вас надолго.</p>
 
 !!! abstract "Коротко"
     - **Где:** [crm.a-faction.xyz](https://crm.a-faction.xyz) → **«Войти через Discord»**.
