@@ -29,7 +29,7 @@ Above the table are two lists: **position types** (the server's shared list; a n
 
 1. Press **"Group"** in the table header and type a name.
 2. Under the group press **"+ Department"** and name the department.
-3. Under the department press **"+ Position"**: type a name and pick a type. The name is saved exactly as you typed it; with no type picked, the name becomes the type too.
+3. Under the department press **"+ Position"**: type a name and pick a type. The name is saved exactly as you typed it; with no type picked, the name becomes the type too. One type can go to as many positions in a department as you like.
 4. Fill in the term and Discord roles for positions and the channel for the department.
 5. Press **"Save"** at the bottom of the section.
 
@@ -54,7 +54,7 @@ Rename a department right in its row. When you save, the panel asks whether to m
 | What you see | Why | What to do |
 |---|---|---|
 | "Already exists" next to a department name | That department already exists in this branch | Rename one of them: the duplicate won't be saved |
-| "This department already has a position of type …" | A position type can't repeat within one department | Pick another type |
+| "This department already has a position “…”. Give the new one a different name." | The department already has a position with that name | Name the new position differently |
 | A position type has no cross | The type is used in the table | Delete the positions of that type first |
 | "The preview has expired" | The page was opened outside "Structure" or in another tab | Open the preview again from "Structure" |
 | "Could not carry the members over" | The rename failed | Save again |
