@@ -1,6 +1,6 @@
 INHERIT: config/base.yml
 site_name: Документация A-Faction
-site_description: Как пользоваться A-Faction: панель управления и Discord-бот для сообществ.
+site_description: "Как пользоваться A-Faction: панель управления и Discord-бот для сообществ."
 docs_dir: content/ru
 site_dir: site
 
@@ -26,4 +26,59 @@ plugins:
   - search:
       lang: [ru, en]
 
-nav: !ENV [AF_NAV_PLACEHOLDER, []]
+nav:
+  - Главная: index.md
+  - Начало работы:
+      - start/index.md
+      - "Подключить сервер": start/connect-server.md
+      - "Добавить бота": start/connect-bot.md
+      - "Первая настройка": start/first-steps.md
+      - "Вход и устройства": start/login.md
+      - "Как устроена панель": start/interface.md
+      - "Приложение": start/desktop.md
+  - Работа с составом:
+      - work/index.md
+      - "Участники и регистрация": work/members.md
+      - "Профиль участника": work/profile.md
+      - "Выговоры": work/reprimands.md
+      - "Снятие выговоров": work/appeals.md
+      - "Неактив": work/inactive.md
+      - "Отчётность": work/reports.md
+      - "Коины": work/coins.md
+      - "Собеседования": work/interviews.md
+      - "Планировщик": work/planner.md
+      - "Чёрные списки": work/blacklist.md
+      - "Формы и анкеты": work/forms.md
+      - "Документы": work/documents.md
+      - "Архив и журнал": work/archive-logs.md
+      - "Экспорт состава": work/export.md
+  - Discord:
+      - discord/index.md
+      - "Команды бота": discord/commands.md
+      - "Формы Discord": discord/discord-forms.md
+      - "Сообщения от бота": discord/webhooks.md
+  - Настройки сервера:
+      - settings/index.md
+      - "Обзор": settings/overview.md
+      - "Структура": settings/structure.md
+      - "Права и доступ": settings/access.md
+      - "Старшинство": settings/hierarchy.md
+      - "Таблица участников": settings/table.md
+      - "Настройка выговоров": settings/reprimands.md
+      - "Настройка планировщика": settings/planner.md
+      - "Уведомления и автоматизации": settings/notifications.md
+      - "Пресеты и названия": settings/presets.md
+      - "Настройка словами": settings/ai-setup.md
+  - Мой аккаунт:
+      - account/index.md
+      - "Личные настройки": account/settings.md
+      - "Приватность": account/privacy.md
+      - "Premium": account/premium.md
+  - Помощь:
+      - help/index.md
+      - "Все ошибки и решения": help/troubleshooting.md
+      - "Частые вопросы": help/faq.md
+      - "A-Faction AI": help/ai.md
+      - "Поддержка": help/support.md
+      - "Статус сервисов": help/status.md
+      - "Словарь": help/glossary.md

@@ -1,6 +1,6 @@
 INHERIT: config/base.yml
 site_name: Документація A-Faction
-site_description: Як користуватися A-Faction: панель керування і Discord-бот для спільнот.
+site_description: "Як користуватися A-Faction: панель керування і Discord-бот для спільнот."
 docs_dir: content/uk
 site_dir: site/uk
 
@@ -26,4 +26,59 @@ plugins:
   - search:
       lang: [ru, en]
 
-nav: !ENV [AF_NAV_PLACEHOLDER, []]
+nav:
+  - Головна: index.md
+  - Початок роботи:
+      - start/index.md
+      - "Підключити сервер": start/connect-server.md
+      - "Додати бота": start/connect-bot.md
+      - "Перше налаштування": start/first-steps.md
+      - "Вхід і пристрої": start/login.md
+      - "Як влаштована панель": start/interface.md
+      - "Застосунок": start/desktop.md
+  - Робота зі складом:
+      - work/index.md
+      - "Учасники та реєстрація": work/members.md
+      - "Профіль учасника": work/profile.md
+      - "Догани": work/reprimands.md
+      - "Зняття доган": work/appeals.md
+      - "Неактив": work/inactive.md
+      - "Звітність": work/reports.md
+      - "Коїни": work/coins.md
+      - "Співбесіди": work/interviews.md
+      - "Планувальник": work/planner.md
+      - "Чорні списки": work/blacklist.md
+      - "Форми та анкети": work/forms.md
+      - "Документи": work/documents.md
+      - "Архів і журнал": work/archive-logs.md
+      - "Експорт складу": work/export.md
+  - Discord:
+      - discord/index.md
+      - "Команди бота": discord/commands.md
+      - "Форми Discord": discord/discord-forms.md
+      - "Повідомлення від бота": discord/webhooks.md
+  - Налаштування сервера:
+      - settings/index.md
+      - "Огляд": settings/overview.md
+      - "Структура": settings/structure.md
+      - "Права та доступ": settings/access.md
+      - "Старшинство": settings/hierarchy.md
+      - "Таблиця учасників": settings/table.md
+      - "Налаштування доган": settings/reprimands.md
+      - "Налаштування планувальника": settings/planner.md
+      - "Сповіщення та автоматизації": settings/notifications.md
+      - "Пресети та назви": settings/presets.md
+      - "Налаштування словами": settings/ai-setup.md
+  - Мій акаунт:
+      - account/index.md
+      - "Особисті налаштування": account/settings.md
+      - "Приватність": account/privacy.md
+      - "Premium": account/premium.md
+  - Допомога:
+      - help/index.md
+      - "Усі помилки та рішення": help/troubleshooting.md
+      - "Часті питання": help/faq.md
+      - "A-Faction AI": help/ai.md
+      - "Підтримка": help/support.md
+      - "Статус сервісів": help/status.md
+      - "Словник": help/glossary.md

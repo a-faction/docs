@@ -724,3 +724,229 @@ body {
     font-size: 1.8rem;
   }
 }
+
+/* Refinements */
+
+.md-typeset strong {
+  font-weight: 700;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-top-color: var(--af-line) !important;
+  border-right-color: var(--af-line) !important;
+  border-bottom-color: var(--af-line) !important;
+}
+
+.md-typeset .admonition.note,
+.md-typeset .admonition.info,
+.md-typeset details.note,
+.md-typeset details.info {
+  border-left-color: var(--af-accent) !important;
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-color: var(--af-ok) !important;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: var(--af-warn) !important;
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-left-color: var(--af-bad) !important;
+}
+
+.md-typeset .admonition.abstract {
+  border-color: var(--af-accent-line) !important;
+  border-left-color: var(--af-accent) !important;
+}
+
+.md-typeset .note > .admonition-title::before,
+.md-typeset .info > .admonition-title::before {
+  background-color: var(--af-accent);
+}
+
+.md-typeset .tip > .admonition-title::before {
+  background-color: var(--af-ok);
+}
+
+.md-typeset .warning > .admonition-title::before {
+  background-color: var(--af-warn);
+}
+
+.md-typeset .danger > .admonition-title::before {
+  background-color: var(--af-bad);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary,
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
+  color: #12131d;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .af-steps > ol > li::before {
+  color: #12131d;
+}
+
+.md-content .af-hero {
+  background:
+    radial-gradient(900px 420px at -10% -60%, var(--af-glow), transparent 65%),
+    radial-gradient(600px 320px at 110% 140%, var(--af-glow), transparent 60%),
+    var(--af-card);
+}
+
+.md-content .af-hero::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 260px;
+  height: 260px;
+  background: url("../brand/logo.svg") no-repeat center / contain;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.md-typeset__table {
+  padding: 0;
+}
+
+/* Livelier look */
+
+[data-md-color-scheme="default"] {
+  --af-muted: #4a4f66;
+  --af-surface: #f3f4fb;
+  --af-line: #dfe2ef;
+  --md-default-fg-color: #14151f;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-fg-color: #eceef6;
+}
+
+.md-typeset {
+  color: var(--af-text);
+}
+
+.md-typeset h1 {
+  background: linear-gradient(90deg, var(--af-text) 0%, var(--af-text) 55%, var(--af-accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 0.08em;
+}
+
+.md-typeset p.af-lead,
+.md-typeset .af-lead {
+  color: var(--af-text);
+  opacity: 0.82;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  padding: 0.1em 0 0.2em 1rem;
+  border-left: 3px solid var(--af-accent);
+  margin-bottom: 1.6em;
+}
+
+.md-typeset h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+}
+
+.md-typeset h2::before {
+  content: "";
+  flex: none;
+  width: 0.42em;
+  height: 1.05em;
+  border-radius: 4px;
+  background: linear-gradient(180deg, var(--af-accent-strong), var(--af-accent));
+}
+
+.md-typeset h2#troubleshooting::before {
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 0;
+  background: var(--af-warn);
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>') center / contain no-repeat;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>') center / contain no-repeat;
+}
+
+.md-typeset h2 .headerlink {
+  margin-left: auto;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--af-accent-soft);
+  color: var(--af-accent-strong);
+  text-transform: none;
+}
+
+.md-typeset table:not([class]) td:first-child {
+  font-weight: 500;
+}
+
+.md-typeset .admonition.abstract ul li {
+  position: relative;
+  padding-left: 1.4em;
+}
+
+.md-typeset .admonition.abstract ul li::before {
+  content: "";
+  position: absolute;
+  left: 0.1em;
+  top: 0.55em;
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background: var(--af-accent);
+  box-shadow: 0 0 0 3px var(--af-accent-soft);
+}
+
+.md-typeset .admonition.abstract ul li strong {
+  color: var(--af-accent-strong);
+}
+
+.md-typeset .af-steps > ol > li::before {
+  background: linear-gradient(135deg, var(--af-accent-strong), var(--af-accent));
+  box-shadow: 0 4px 12px var(--af-glow);
+}
+
+.md-nav__link .md-icon svg,
+.md-nav__icon svg {
+  color: var(--af-accent);
+  fill: var(--af-accent);
+}
+
+.md-nav__link > .md-icon {
+  margin-right: 0.35rem;
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child .twemoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: 0.4rem;
+  border-radius: 10px;
+  background: var(--af-accent-soft);
+  vertical-align: middle;
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child .twemoji svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.md-typeset .grid.cards > ul > li {
+  background:
+    linear-gradient(180deg, var(--af-accent-soft), transparent 70%),
+    var(--af-card);
+}
+
+.md-typeset .af-hero h1 {
+  font-size: 2.6rem;
+}

@@ -1,6 +1,6 @@
 INHERIT: config/base.yml
 site_name: A-Faction Docs
-site_description: How to use A-Faction: the control panel and Discord bot for communities.
+site_description: "How to use A-Faction: the control panel and Discord bot for communities."
 docs_dir: content/en
 site_dir: site/en
 
@@ -26,4 +26,59 @@ plugins:
   - search:
       lang: en
 
-nav: !ENV [AF_NAV_PLACEHOLDER, []]
+nav:
+  - Home: index.md
+  - Getting started:
+      - start/index.md
+      - "Connect a server": start/connect-server.md
+      - "Add the bot": start/connect-bot.md
+      - "First setup": start/first-steps.md
+      - "Sign-in and devices": start/login.md
+      - "Panel tour": start/interface.md
+      - "Desktop app": start/desktop.md
+  - Members and work:
+      - work/index.md
+      - "Members and registration": work/members.md
+      - "Member profile": work/profile.md
+      - "Reprimands": work/reprimands.md
+      - "Reprimand appeals": work/appeals.md
+      - "Leave of absence": work/inactive.md
+      - "Reports": work/reports.md
+      - "Coins": work/coins.md
+      - "Interviews": work/interviews.md
+      - "Planner": work/planner.md
+      - "Blacklists": work/blacklist.md
+      - "Forms": work/forms.md
+      - "Documents": work/documents.md
+      - "Archive and log": work/archive-logs.md
+      - "Roster export": work/export.md
+  - Discord:
+      - discord/index.md
+      - "Bot commands": discord/commands.md
+      - "Discord forms": discord/discord-forms.md
+      - "Bot messages": discord/webhooks.md
+  - Server settings:
+      - settings/index.md
+      - "Overview": settings/overview.md
+      - "Structure": settings/structure.md
+      - "Permissions": settings/access.md
+      - "Rank order": settings/hierarchy.md
+      - "Member table": settings/table.md
+      - "Reprimand settings": settings/reprimands.md
+      - "Planner settings": settings/planner.md
+      - "Notifications and automations": settings/notifications.md
+      - "Presets and terms": settings/presets.md
+      - "Setup in plain words": settings/ai-setup.md
+  - My account:
+      - account/index.md
+      - "Personal settings": account/settings.md
+      - "Privacy": account/privacy.md
+      - "Premium": account/premium.md
+  - Help:
+      - help/index.md
+      - "Errors and fixes": help/troubleshooting.md
+      - "FAQ": help/faq.md
+      - "A-Faction AI": help/ai.md
+      - "Support": help/support.md
+      - "Service status": help/status.md
+      - "Glossary": help/glossary.md

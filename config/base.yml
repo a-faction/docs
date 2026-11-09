@@ -4,7 +4,7 @@ copyright: © A-Faction
 
 theme:
   name: material
-  custom_dir: ../theme
+  custom_dir: theme
   logo: assets/brand/logo.svg
   favicon: assets/brand/favicon.ico
   font: false
