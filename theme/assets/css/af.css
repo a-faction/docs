@@ -801,13 +801,20 @@ body {
 .md-content .af-hero::after {
   content: "";
   position: absolute;
-  right: -40px;
-  top: -40px;
-  width: 260px;
-  height: 260px;
+  right: 3rem;
+  top: 50%;
+  width: 210px;
+  height: 218px;
+  transform: translateY(-50%);
   background: url("../brand/logo.svg") no-repeat center / contain;
-  opacity: 0.08;
+  opacity: 0.1;
   pointer-events: none;
+}
+
+@media screen and (max-width: 60em) {
+  .md-content .af-hero::after {
+    display: none;
+  }
 }
 
 .md-typeset__table {
