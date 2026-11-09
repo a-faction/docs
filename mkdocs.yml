@@ -4,9 +4,16 @@ site_description: "Как пользоваться A-Faction: панель уп�
 extra:
   footer:
     home: https://a-faction.xyz
+    tagline: Документация CRM и Discord-бота для сообществ — как всё устроено и что делать, если что-то не работает.
     made_by: Сделано
     to_top: Наверх
     columns:
+      - title: Документация
+        links:
+          - { title: Начало работы, url: start/ }
+          - { title: Работа с составом, url: work/ }
+          - { title: Настройки сервера, url: settings/ }
+          - { title: Все ошибки и решения, url: help/troubleshooting/ }
       - title: A-Faction
         links:
           - { title: Сайт, href: "https://a-faction.xyz" }
@@ -17,6 +24,7 @@ extra:
         links:
           - { title: Discord, href: "https://discord.gg/2cMBp8gjYn" }
           - { title: GitHub, href: "https://github.com/a-faction/docs" }
+          - { title: Поддержка, url: help/support/ }
 docs_dir: content/ru
 site_dir: site
 

@@ -64,22 +64,22 @@ hide:
 <div class="af-fixes" markdown>
 
 <div class="af-fix" markdown>
-<span class="af-fix__what">При входе пишет «Доступ запрещен»</span>
+<span class="af-fix__what">:material-account-lock-outline: При входе пишет «Доступ запрещен»</span>
 <span class="af-fix__how">Вашего Discord-аккаунта ещё нет в составе. Попросите руководство зарегистрировать вас. [Подробнее](start/login.md#troubleshooting)</span>
 </div>
 
 <div class="af-fix" markdown>
-<span class="af-fix__what">Пропал раздел или нет кнопки</span>
+<span class="af-fix__what">:material-eye-off-outline: Пропал раздел или нет кнопки</span>
 <span class="af-fix__how">Раздел скрыт для вашей должности или у неё нет права на это действие. [Подробнее](settings/access.md#troubleshooting)</span>
 </div>
 
 <div class="af-fix" markdown>
-<span class="af-fix__what">Бот не выдал роль в Discord</span>
+<span class="af-fix__what">:material-robot-confused-outline: Бот не выдал роль в Discord</span>
 <span class="af-fix__how">Роль бота стоит ниже выдаваемой — поднимите её в настройках ролей Discord. [Подробнее](start/connect-bot.md#troubleshooting)</span>
 </div>
 
 <div class="af-fix" markdown>
-<span class="af-fix__what">Не приходит код подтверждения</span>
+<span class="af-fix__what">:material-email-alert-outline: Не приходит код подтверждения</span>
 <span class="af-fix__how">Бот пишет только тем, с кем у него общий сервер. Зайдите в Discord A-Faction и откройте личные сообщения. [Подробнее](start/connect-server.md#troubleshooting)</span>
 </div>
 
@@ -89,13 +89,13 @@ hide:
 
 ## Разделы { #sections }
 
-<div class="af-index" markdown>
+<div class="af-tiles" markdown>
 
-- [Начало работы](start/index.md) <span>подключение, бот, вход</span>
-- [Работа с составом](work/index.md) <span>участники, выговоры, отчёты, коины</span>
-- [Discord](discord/index.md) <span>команды бота, кнопки, объявления</span>
-- [Настройки сервера](settings/index.md) <span>структура, права, уведомления</span>
-- [Мой аккаунт](account/index.md) <span>тема, язык, приватность</span>
-- [Помощь](help/index.md) <span>частые вопросы, ИИ, поддержка</span>
+<a class="af-tile" href="start/" markdown="span">:material-rocket-launch-outline: <strong>Начало работы</strong> <small>подключение, бот, вход</small></a>
+<a class="af-tile" href="work/" markdown="span">:material-account-group-outline: <strong>Работа с составом</strong> <small>участники, выговоры, отчёты, коины</small></a>
+<a class="af-tile" href="discord/" markdown="span">:material-chat-outline: <strong>Discord</strong> <small>команды бота, кнопки, объявления</small></a>
+<a class="af-tile" href="settings/" markdown="span">:material-cog-outline: <strong>Настройки сервера</strong> <small>структура, права, уведомления</small></a>
+<a class="af-tile" href="account/" markdown="span">:material-account-circle-outline: <strong>Мой аккаунт</strong> <small>тема, язык, приватность</small></a>
+<a class="af-tile" href="help/" markdown="span">:material-lifebuoy: <strong>Помощь</strong> <small>частые вопросы, ИИ, поддержка</small></a>
 
 </div>
