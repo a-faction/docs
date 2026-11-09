@@ -1,0 +1,75 @@
+{% set f = config.extra.footer %}
+<footer class="md-footer">
+  {% if "navigation.footer" in features %}
+    {% if page.previous_page or page.next_page %}
+      {% if page.meta and page.meta.hide %}
+        {% set hidden = "hidden" if "footer" in page.meta.hide %}
+      {% endif %}
+      <nav class="md-footer__inner md-grid" aria-label="{{ lang.t('footer') }}" {{ hidden }}>
+        {% if page.previous_page %}
+          {% set direction = lang.t("footer.previous") %}
+          <a href="{{ page.previous_page.url | url }}" class="md-footer__link md-footer__link--prev" aria-label="{{ direction }}: {{ page.previous_page.title | e }}">
+            <div class="md-footer__button md-icon">{% include ".icons/material/arrow-left.svg" %}</div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">{{ direction }}</span>
+              <div class="md-ellipsis">{{ page.previous_page.title }}</div>
+            </div>
+          </a>
+        {% endif %}
+        {% if page.next_page %}
+          {% set direction = lang.t("footer.next") %}
+          <a href="{{ page.next_page.url | url }}" class="md-footer__link md-footer__link--next" aria-label="{{ direction }}: {{ page.next_page.title | e }}">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">{{ direction }}</span>
+              <div class="md-ellipsis">{{ page.next_page.title }}</div>
+            </div>
+            <div class="md-footer__button md-icon">{% include ".icons/material/arrow-right.svg" %}</div>
+          </a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  {% endif %}
+
+  <div class="af-foot">
+    <div class="af-foot__inner md-grid">
+      <div class="af-foot__main">
+        <div class="af-foot__brand">
+          <a href="{{ f.home }}" class="af-foot__logo">
+            <img src="{{ 'assets/brand/logo-wordmark.png' | url }}" alt="A-Faction" width="125" height="42" loading="lazy" decoding="async">
+          </a>
+          <span class="af-foot__tagline">{{ f.tagline }}</span>
+        </div>
+
+        <nav class="af-foot__columns" aria-label="{{ lang.t('footer') }}">
+          {% for column in f.columns %}
+            <div class="af-foot__column">
+              <span class="af-foot__title">{{ column.title }}</span>
+              {% for link in column.links %}
+                {% if link.url %}
+                  <a href="{{ link.url | url }}" class="af-foot__link">{{ link.title }}</a>
+                {% else %}
+                  <a href="{{ link.href }}" class="af-foot__link" target="_blank" rel="noopener">{{ link.title }}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </nav>
+      </div>
+
+      <div class="af-foot__bottom">
+        <span class="af-foot__copyright">© 2024 – {{ build_date_utc.strftime('%Y') }} A-Faction</span>
+        <div class="af-foot__meta">
+          <span class="af-foot__madeby">{{ f.made_by }} <a href="https://discord.com/users/325196577624817674" target="_blank" rel="noopener">jalisco</a></span>
+          <button type="button" class="af-foot__top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <span>{{ f.to_top }}</span>
+            {% include ".icons/material/arrow-up.svg" %}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="af-foot__wordmark md-grid" aria-hidden="true">
+      <img src="{{ 'assets/brand/logo-wordmark-large.png' | url }}" alt="" width="1600" height="398" loading="lazy" decoding="async" draggable="false">
+    </div>
+  </div>
+</footer>
