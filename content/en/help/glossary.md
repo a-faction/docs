@@ -27,8 +27,8 @@ Bot command
 Unit
 :   A faction, department or organization. The name depends on the server.
 
-Ministry / group
-:   A bundle of several units.
+Group
+:   A section heading in the member table. Holds several factions. Used to be called a “ministry”.
 
 Position
 :   A person's place in a unit. It decides permissions and the Discord role.
