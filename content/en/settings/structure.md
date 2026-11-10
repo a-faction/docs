@@ -43,7 +43,7 @@ The **"Preview"** button in the table header opens the "Members" page with your 
 
 ## Order = rank
 
-Higher in the list means more senior. Groups, departments and positions move by the handle on the left, and a department can be moved to another group. See [Rank order](hierarchy.md).
+Within a department, the position higher in the list is senior; administration is above all members. Groups, departments and positions move by the handle on the left, and a department can be moved to another group. See [Rank order](hierarchy.md).
 
 ## Renaming
 
