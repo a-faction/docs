@@ -19,13 +19,15 @@ The server owner and the platform admins see and can do everything.
 
 ## 2. Section visibility
 
-For each menu item: on or hidden, which positions and units can see it, a custom name.
+For each menu item: on or hidden, which position types, departments and individual positions can see it, a custom name. A department opens the item to all its positions, a position only to itself.
 
 **An empty list = visible to everyone.** "Site settings" can't be turned off, but can be limited.
 
 ## 3. Action permissions
 
-Tick an action for a position — that position gets the button.
+Matrix rows are administration departments with their positions underneath. A tick on a department grants the permission to all its positions, a tick on a position grants it only to that position. While the department holds the permission, its positions show a faded tick; untick the department to set positions one by one.
+
+In [Structure](structure.md) every administration position has a shield button that opens the matrix right on that position's row. When a department is renamed, its permissions and menu visibility move with it.
 
 | Group | Permission | Allows |
 |---|---|---|
