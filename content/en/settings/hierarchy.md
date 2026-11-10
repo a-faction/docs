@@ -18,6 +18,7 @@ icon: material/sort-variant
 - **You can only appoint below yourself.** Registration and data edits list only positions below yours in your department (administration also sees lower departments and all members).
 - **Several positions** — each one protects the person: to act on them you must outrank every position they hold. Positions on other servers don't count.
 - **The owner and platform admins** are above everyone.
+- It applies in the bot too: `/reprimand`, `/coins`, `/demote`, `/shop` and the position choice in `/registration`.
 
 ## Troubleshooting { #troubleshooting }
 
@@ -25,6 +26,8 @@ icon: material/sort-variant
 |---|---|---|
 | "That position stands above yours, so the action is unavailable" | The target is senior or equal | Someone senior has to do it |
 | "Нельзя применять это действие к вышестоящему участнику" (bot) | Same | Same |
+| "Участник не ниже вас: он старше или равен по должности, из другого отдела, либо это вы сами" (bot) | The target isn't your subordinate | Their department head or administration does it |
+| "Нет должностей ниже вашей, на которые вы можете назначить" (bot) | Your department has no positions below yours | Someone senior registers |
 | "This action cannot be applied to yourself" | Acting on yourself | Ask another leader |
 | The position is missing at registration | It isn't below yours | Someone senior registers |
 | The order is wrong | It's mixed up in the structure | Drag positions within the department |
